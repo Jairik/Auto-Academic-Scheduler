@@ -1,6 +1,6 @@
 # Academic-Scheduler
 
-The Academic Scheduler is an application that allows the user to create, save, and export a semester schedule for an academic department. It uses multiple subwindow viewers of information of the schedule and a drag-and-drop interface to make course scheduling quicker and easier. There is certainly no possible way that this or any other program will be able to encompass all the intricacies in scheduling for every department at every university, but it is hoped that it will be sufficient and ease a significantly difficult task for the departmental leadership.  There is an example schedule file `ExampleSchedule.ash' in the version directory to help you get started.
+The Academic Scheduler is an application that allows the user to create, save, and export a semester schedule for an academic department. It uses multiple subwindow viewers of information of the schedule and a drag-and-drop interface to make course scheduling quicker and easier. There is certainly no possible way that this or any other program will be able to encompass all the intricacies in scheduling for every department at every university, but it is hoped that it will be sufficient and ease a significantly difficult task for the departmental leadership.  There is an example schedule file `ExampleSchedule.ash` in the version directory to help you get started.
 
 **Windows Users**
 
