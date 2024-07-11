@@ -20,7 +20,7 @@ To run this program from the source code:
 - Run the following command from your terminal:  `python AcademicScheduler.py` or possibly `python3 AcademicScheduler.py`
 
 **Notes:** 
-- For Linux and MacOS users, depending on how your system is set up, you may be able to simply double-click the AcademicScheduler.py from your file browser instead of running this from the terminal.  
+- For Linux and MacOS users, depending on how your system is set up, you may be able to simply double-click the AcademicScheduler.py file from your file browser instead of running this from the terminal.  
 - A png file of a program icon  **[ProgramIcon.png](https://github.com/mathprofdes/Academic-Scheduler/releases/download/v2.3.1/ProgramIcon.png)** is included if you wish to use it for a shortcut to the program.  
 - The **[ExampleSchedule.ash](https://github.com/mathprofdes/Academic-Scheduler/releases/download/v2.3.1/ExampleSchedule.ash)** file is an example schedule that will help you get started with the program.
 
