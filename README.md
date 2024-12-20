@@ -1,5 +1,7 @@
 # Academic Scheduler
 
+<!--
+
 **Download the Current Version (2.3.1)**
 
 **Windows Users**
@@ -35,3 +37,9 @@ The Academic Scheduler is an application that allows the user to create, save, a
 **Screenshot**
 
 ![Screenshot of program.](/Version_2_3_1/AcademicSchedulerOverview.png)
+
+--->
+
+Currently working on implementing an auto-scheduling feature, with hopes of making this application seamlessly automatically schedule professor's classtimes.
+
+Forked from Dr. Donald Spickler's (@mathprofdes) Public Repository *Academic Scheduler*
