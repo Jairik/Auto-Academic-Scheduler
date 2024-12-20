@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="Academic Scheduler Help">
+<meta name="author" content="Don Spickler">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<TITLE>Academic Scheduler User's Guide</TITLE>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/personal.css">
+
+</HEAD>
+<BODY>
+
+<!-- ///////////////   Begin Page Contents    //////////////////// -->
+<div class="container" style="margin-top: 2%; margin-bottom: 2%">
+
+<P class=CenterSmallTopSpace></P>
+
+<H5 class=TitleUnd>Room Viewer</H5>
+
+<P>
+The room viewer is another key subwindow in the program.  It allows the user to initially place courses in rooms and times and moving of classes between and within rooms by a quick click and drag operation.  When dragging into a room viewer the drop position will be highlighted in gray.  So a drop at that point will schedule the course in the gray highlighted area.  If you are over two or more possible drop sites one of them will be highlighted, when dropped a popup menu will appear with all the possible options, simply select one from the menu.  When you drag a course away from its position it is removed from its currently scheduled slots and dropped into the new slot.  The positioning of the drop is dependent on the Insert Mode that is selected.  These are discussed below.  If the drag and drop interface does not schedule the class exactly as needed the user can always open the course information for that class and adjust the scheduling of it however they would like.  It is hoped that the majority of the scheduling can be done without resorting to the course information dialog, much quicker with drag and drop. 
+
+<CENTER>
+<IMG SRC="images/RoomViewer002.png" WIDTH="600">
+</CENTER>
+
+<UL class="IndentList">
+<LI>The layout of this view is each room is listed on the right, the courses assigned to that room are below and in the list at the bottom and the weekly schedule area shows the layout of the courses in the room listing the course, section, and professor's short designation.  The courses list at the bottom is collapsible, just drag the divider to the bottom. The title bar shows the room, the capacity in parentheses, and if there is a designation that will be displayed after the capacity.
+
+<LI>The color of the box containing the course uses the same color codes that are in the status column of the Course/Faculty Assignments window. Red for unscheduled,  yellow for partially scheduled, green for fully scheduled and light green for over-scheduled. 
+
+<LI>Tentative courses are rendered in gray and italics. 
+
+<LI>The status bar shows the course you are hovering over and if the mouse is not over a course the insert mode is displayed. 
+
+<LI>If you double-click on a room the room editor will be invoked to edit the properties of the room. 
+
+<LI>If yow double-click a course either in the listing at the bottom or on the weekly viewer the course information dialog will appear with the particular course loaded. In addition, a Ctrl+Click on a course in the weekly viewer will do the same.  The workings of the course information dialog are discussed in its own section.  
+
+<CENTER>
+<IMG SRC="images/CourseInfo001.png" WIDTH="500" class=frame>
+</CENTER>
+
+<LI>If you right-click on a course either in the listing at the bottom or on the weekly viewer a pop-up menu will appear with the following options.
+<UL class="IndentList">
+<LI><B>Course Properties</B>: Invokes the course information dialog for the selected class. 
+<LI><B>Tentative</B>: Check box for designating the course as tentative or real.
+<LI><B>Remove Course from Rooms</B>: This will remove the rooms and times from the scheduling of this class but leave the class in the schedule with the current instructor or instructors.
+<LI><B>Remove Course from Schedule</B>: This will remove the course from the schedule.  
+</UL>
+
+</UL>
+
+<P>
+<B>Options:</B>
+<UL class="IndentList">
+<LI><B>Add New Rooms</B>: This invokes the new room input dialog to add in new rooms to the room database.
+<LI><B>Edit Room</B>: This will open the room input dialog but with only one line and the data of the currently selected room loaded into the cells.  Edit the fields as desired and click the OK button to finish editing. 
+<LI><B>Delete Room</B>: This will delete the currently selected room.  If any classes are scheduled in that room those slots will be removed but the courses will stay on the schedule with the same class and instructor. 
+<LI><B>Save Image</B>: Saves the weekly view image to an image file.  The file type is any type supported by your operating system and the graphical user interface.  The three main types supported are png, jpg, and bmp.  The type is automatically selected from the extension used for the filename.  The default is png.
+<LI><B>Copy Image</B>: This will copy the image to the system clipboard.
+<LI><B>Print</B>: This will send the weekly image to the selected printer using the dimensions and scaling that are selected in the Image Printing Options.  
+<LI><B>Print Preview</B>: This will invoke the print preview dialog for the weekly image.  
+<LI><B>Show Status Bar</B>: This will toggle the status bar on and off.
+</UL>
+
+
+<P>
+<B>Insert Modes:</B> With each of these modes the Standard Timeslots are the ones that you originally populated the timeslot database with.  Also, the Free Positioning modes start the block of time at time within the current weekly schedule image. In the free positioning mode the start times increment by 5 minutes, hence the window should be made fairly large so that the drop can be more precise.  Most likely you will use just a couple of these modes that will suit your needs, each mode has a shortcut of Ctrl+# or Alt+# to easily switch modes.
+<UL class="IndentList">
+<LI><B>Standard Timeslot</B>: This drops the course into a standard timeslot.
+<LI><B>Single Day Standard Timeslot</B>: This drops the course into a standard timeslot but in only a single day that is being hovered over. So if the standard timeslot is MWF 8-8:50 and the mouse is over Wednesday the drop will be W 8-8:50.  
+<LI><B>Single Day Standard Timeslot with Contact Hour Truncation</B>: This is similar to the Single Day Standard Timeslot mode except that it will not drop the entire timeslot time if the number of remaining minutes is less than the timeslot minutes.  So if you have a class that needs 200 minutes, and it is already scheduled for 150 minutes, and you drop it into a 75-minute slot only the first 50 minutes of that slot will be used.
+<LI><B>Block with Standard Timeslot Starts</B>: This will drop the entire needed time of a class in one continuous block of time starting at the beginning of the timeslot that the mouse is over.  This is good for classes that meet once a week for the entire time of the course, such as labs or some evening and weekend classes.  
+<LI><B>Block with Free Positioning</B>: Same functionality as the Block with Standard Timeslot Starts but uses free positioning for the start of the class.  Again it is useful for labs or some evening and weekend classes.  
+<LI><B>Block with Standard Timeslot Starts and Contact Hour Truncation</B>: The same as Block with Standard Timeslot Starts but drops only the remaining time to be scheduled.  This would be useful if a portion of the class is already scheduled, and you wish to dump the rest of the course time in a single block.
+<LI><B>Block with Free Positioning and Contact Hour Truncation</B>: Same as Block with Standard Timeslot Starts and Contact Hour Truncation but uses free positioning for the start of the block. 
+<LI><B>50 Minute Standard Timeslot Starts</B>: A single 50-minute slot starting at the beginning of a standard timeslot.
+<LI><B>50 Minute Free Positioning</B>: A single 50-minute slot using free positioning for the starting time.
+<LI><B>60 Minute Standard Timeslot Starts</B>: A single 60-minute slot starting at the beginning of a standard timeslot.
+<LI><B>60 Minute Free Positioning</B>: A single 60-minute slot using free positioning for the starting time.
+<LI><B>75 Minute Standard Timeslot Starts</B>: A single 75-minute slot starting at the beginning of a standard timeslot.
+<LI><B>75 Minute Free Positioning</B>: A single 75-minute slot using free positioning for the starting time.
+</UL>
+
+</div>
+</BODY>
+</HTML>
+

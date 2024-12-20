@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="Academic Scheduler Help">
+<meta name="author" content="Don Spickler">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<TITLE>Academic Scheduler User's Guide</TITLE>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/personal.css">
+
+</HEAD>
+<BODY>
+
+<!-- ///////////////   Begin Page Contents    //////////////////// -->
+<div class="container" style="margin-top: 2%; margin-bottom: 2%">
+
+<P class=CenterSmallTopSpace></P>
+
+<H5 class=TitleUnd>Professor Schedule Viewer</H5>
+
+<P>
+The professor schedule viewer is not as functional as the room viewer as it does not allow drag and drop, but it is convenient to have visible while scheduling to make sure that the individual's schedule matches their needs and does not make their work week unmanageable, for example inadvertently giving them four classes in a row.
+
+<CENTER>
+<IMG SRC="images/ProfViewer001.png" WIDTH="600">
+</CENTER>
+
+<UL class="IndentList">
+<LI>The layout of this view is each professor is listed on the right, the courses assigned to that professor are below and in the list at the bottom and the weekly schedule area shows the layout of the courses for that professor listing the course, section, and room.  The title bar shows the professor's name and short designation.
+
+<LI>The color of the box containing the course uses the same color codes that are in the status column of the Course/Faculty Assignments window. Red for unscheduled,  yellow for partially scheduled, green for fully scheduled and light green for over-scheduled. 
+
+<LI>Tentative courses are rendered in gray and italics. 
+
+<LI>If you double-click on a room the room editor will be invoked to edit the properties of the room. 
+
+<LI>If yow double-click a course either in the listing at the bottom or on the weekly viewer the course information dialog will appear with the particular course loaded. In addition, a Ctrl+Click on a course in the weekly viewer will do the same.  The workings of the course information dialog are discussed in its own section.  
+
+<CENTER>
+<IMG SRC="images/CourseInfo001.png" WIDTH="500" class=frame>
+</CENTER>
+
+<LI>If you right-click on a course either in the listing at the bottom or on the weekly viewer a pop-up menu will appear with the following options.
+<UL class="IndentList">
+<LI><B>Course Properties</B>: Invokes the course information dialog for the selected class. 
+<LI><B>Tentative</B>: Check box for designating the course as tentative or real.
+<LI><B>Remove Course from Rooms</B>: This will remove the rooms and times from the scheduling of this class but leave the class in the schedule with the current instructor or instructors.
+<LI><B>Remove Course from Schedule</B>: This will remove the course from the schedule.  
+</UL>
+
+</UL>
+
+<P>
+<B>Options:</B>
+<UL class="IndentList">
+<LI><B>Add New Faculty</B>: This invokes the new faculty input dialog to add in new faculty members to the faculty database.
+<LI><B>Edit Faculty</B>: This will open the faculty input dialog but with only one line and the data of the currently selected faculty member loaded into the cells.  Edit the fields as desired and click the OK button to finish editing. 
+<LI><B>Delete Faculty Member</B>: This will delete the currently selected faculty member.  If any classes in the schedule are being taught by this faculty member they will be removed from the schedule. Unless the course is team taught and then the faculty member is removed from the team and the course remains in the schedule. 
+<LI><B>Save Image</B>: Saves the weekly view image to an image file.  The file type is any type supported by your operating system and the graphical user interface.  The three main types supported are png, jpg, and bmp.  The type is automatically selected from the extension used for the filename.  The default is png.
+<LI><B>Copy Image</B>: This will copy the image to the system clipboard.
+<LI><B>Print</B>: This will send the weekly image to the selected printer using the dimensions and scaling that are selected in the Image Printing Options.  
+<LI><B>Print Preview</B>: This will invoke the print preview dialog for the weekly image.  
+</UL>
+
+</div>
+</BODY>
+</HTML>
+

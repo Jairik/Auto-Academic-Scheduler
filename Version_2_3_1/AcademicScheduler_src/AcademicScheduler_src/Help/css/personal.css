@@ -1,0 +1,191 @@
+.TitleUnd { margin-bottom: 1em; border-bottom: solid 1px #000000;}
+
+P.PersonalInfo{
+font: bold 14px Arial;
+margin: 0px 10px 20px 0px;
+}
+
+P.SmallTopSpace{
+margin: 5px 0px 0px 0px;
+}
+
+a.BoldLink { 
+	padding: 0;
+	/* font-weight: bold;  */
+	color: #008;
+	text-decoration: none;
+ }
+
+a:hover.BoldLink { 
+	color: #F00;
+	text-decoration: none;
+ }
+
+ a.BoldLinkBlack { 
+	padding: 0;
+	/* font-weight: bold;  */
+	color: #000;
+	text-decoration: none;
+ }
+
+a:hover.BoldLinkBlack { 
+	color: #F00;
+	text-decoration: none;
+ }
+
+ 
+div.BoldLink a{ 
+	padding: 0;
+	font-weight: bold; 
+	color: #009;
+	text-decoration: none;
+ }
+
+div.BoldLink a:hover{ 
+	color: #900;
+	text-decoration: none;
+ }
+
+div.flushright{
+    text-align: right;
+}
+
+div.quote{
+    margin: 10px 30px 10px 30px;
+    font-size: 120%;
+}
+
+body {background: url(../graphics/backlogo.jpg);
+background-attachment: fixed;  background-repeat: no-repeat; background-position: center;
+color: #000000;
+} 
+
+ol.IndentList { 
+    margin-left: 20px;
+    counter-reset: list;
+    display: table;
+}
+
+ol.IndentList li {
+    list-style: none;
+    counter-increment: list;
+    display: table-row;
+}
+
+ol.IndentList li::before {
+    content: counter(list) ".";
+    display: table-cell;
+    text-align: right;
+    padding-right: 1em;
+}
+
+ol.IndentList ol{ 
+	margin-left: 20px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	padding: 0;
+}
+
+ul.IndentList { 
+    margin-left: 20px;
+    display: table;
+ }
+
+ul.IndentList li {
+    list-style: none;
+    display: table-row;
+}
+
+ul.IndentList li::before {
+    content: "-";
+    display: table-cell;
+    text-align: right;
+    padding-right: 1em;
+}
+      
+ul.IndentList ul{ 
+	margin-left: 20px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	padding: 0;
+ }
+
+
+IMG.Left{
+margin: 5px 10px 5px 0px;
+border: 1px solid #000;
+float: left;
+}
+
+IMG.Right{
+margin: 5px 0px 5px 10px;
+border: 1px solid #000;
+float: right;
+}
+
+IMG.Center{
+margin: 5px 0px 5px 10px;
+border: 1px solid #000;
+float: center;
+}
+
+IMG.frame{
+border: 1px solid #000;
+}
+
+IMG.RightNB{
+margin: 5px 0px 5px 10px;
+float: right;
+}
+
+IMG.LeftNB{
+margin: 5px 10px 5px 0px;
+float: left;
+}
+
+IMG.CenterNB{
+margin: 5px 0px 5px 10px;
+border: 0px solid #000;
+float: center;
+}
+
+HR.ShortDiv{
+    color: #bbb;
+    margin: 10px 100px 10px 100px;
+}
+
+
+DL.UpdateHistory{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+DL.UpdateHistory ul {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.center{
+    text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.CenterSmallTopSpace{
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+}
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 10px;
+}
+

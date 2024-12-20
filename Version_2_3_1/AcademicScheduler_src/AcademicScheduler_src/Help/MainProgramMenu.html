@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="Academic Scheduler Help">
+<meta name="author" content="Don Spickler">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<TITLE>Academic Scheduler User's Guide</TITLE>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/personal.css">
+
+</HEAD>
+<BODY>
+
+<!-- ///////////////   Begin Page Contents    //////////////////// -->
+<div class="container" style="margin-top: 2%; margin-bottom: 2%">
+
+<P class=CenterSmallTopSpace></P>
+
+<H5 class=TitleUnd>Main Program Menu Options</H5>
+
+<B>File:</B>
+<UL class="IndentList">
+<LI><B>New</B>: Clears all databases and resets options. 
+
+<LI><B>Open</B>: Opens a schedule file (*.ash) and loads all databases.
+
+<LI><B>Save</B>: Saves the entire schedule and all supporting databases to a single file (*.ash).
+
+<LI><B>Save As</B>: Gets a filename from the user and saves the entire schedule and all supporting databases to a single file (*.ash).
+
+<LI><B>Merge</B>: Merges two schedules together and produces a merge report.  The merge will add faculty, courses, timeslots, and scheduled classes to the schedule.  There may be altering of section numbers and classes that would produce time conflicts are removed from their rooms and time so that the resulting schedule has no conflicts.  At the end of the merge a merge report is generated and displayed so that the user knows what changes were made along the way.
+
+<LI><B>Merge Report</B>: The merger report from a merge is displayed but the files are not merged.  
+
+<LI><B>Exit</B>: Ends the program. 
+</UL>
+
+
+<B>Edit:</B>
+<UL class="IndentList">
+<LI><B>Description</B>: A schedule can have a description and this will allow the user to edit it.  These are usually small, for example, Fall 2022.
+<LI><B>Annual Hour Load</B>: The annual hour load is the number of semester hours a faculty member is expected to be in class.  This is only used in the workload displays and reports.  If set to 1 then workload and semester hours are the same, hence the separate calculation of the fraction of load is not done. 
+<LI><B>Image Printing Options</B>: These are options that are used for printing the weekly schedule images.  The height and with in inches as well as any scaling options. 
+<LI><B>Minimum Font Size</B>: The weekly schedule images in several viewers automatically resize the font to fit the available space.  This can make some text hard to read if the available space is small.  This value is the lower bound on the font size.  If the font is too big for the available space the text will go over the edges of the boxes but still be readable. 
+<LI><B>Section Numbers</B>: This invokes the section number editor which is discussed in its own section. 
+
+<LI><B>Add to Databases</B>: 
+<UL class="IndentList">
+<LI><B>Add New Courses</B>: Invokes the new course dialog for the addition of courses.
+<LI><B>Add New Faculty</B>: Invokes the new professor dialog for the addition of faculty members.
+<LI><B>Add New Standard Timeslots</B>: Invokes the new timeslot dialog for the addition of standard timeslots.
+<LI><B>Add New Rooms</B>: Invokes the new rooms dialog for the addition of rooms.
+</UL>
+
+
+<LI><B>Delete Databases</B>: 
+<UL class="IndentList">
+<LI><B>Remove Rooms and Times</B>: Removes the rooms and times from all scheduled classes but does not delete any courses nor does it change the instructors.  
+<LI><B>Delete Schedule Database</B>: Deletes all classes from the schedule but does not alter any other supporting databases.
+<LI><B>Delete Courses Database</B>: Removes the course database.  Since any scheduled class must have a course associated with it, all currently scheduled classes will also be deleted. 
+<LI><B>Delete Faculty Database</B>: Removes the faculty database.  Since any scheduled class must have at least one professor associated with it, all currently scheduled classes will also be deleted. 
+<LI><B>Delete Standard Timeslots Database</B>: Deletes all standard timeslots.  Since these are not linked to scheduled classes there is no other altering of databases.
+<LI><B>Delete Rooms Database</B>: Removes the room database.  Since any class that is scheduled must be in a room, all rooms and times will be removed from each class.  The classes themselves and the professors instructing them are not removed.
+<LI><B>Delete All Databases</B>: This will remove all databases, essentially like selecting New from the file menu.
+</UL>
+
+<LI><B>Theme</B>: This allows the user to select the theme for the graphical user interface.  The options here depend on the system being used and there usually are not too many.
+
+</UL>
+
+
+
+<B>View:</B>
+<UL class="IndentList">
+<LI><B>Course List</B>: Opens the Courses subwindow.  There can only be one courses subwindow open at a time.  The user will drag these to the Course/Faculty Assignments window to assign courses to faculty.
+
+<LI><B>Course/Faculty Assignments</B>: Opens the Course/Faculty Assignments subwindow.  There can only be one Course/Faculty Assignments subwindow open at a time.  This window is the central point of the program.  The user will drag courses from the Courses window to this one to assign classes to the faculty member and then drag classes from here to a room viewer window to place the classes into a room and time.  
+
+<LI><B>Room Viewer</B>: Opens a Room Viewer subwindow.  There can be as many Room Viewer subwindows open as you would like.  The room viewers allow courses to be dragged and dropped from the Course/Faculty Assignments window, or another room viewer, to them for room and time placement. 
+
+<LI><B>Professor Schedule Viewer</B>: Opens a Professor Schedule Viewer subwindow.  There can be as many Professor Schedule Viewer subwindows open as you would like. This window shows the course layout for a single professor's schedule.  This view does not allow drag and drop of courses like the room viewer, but you can edit course properties from here.
+
+<LI><B>Course Position Viewer</B>: Opens a Course Position Viewer subwindow.  There can be as many Course Position Viewer subwindows open as you would like.  This is a viewer that shows the positioning of courses over the week and highlights overlaps. This helps determine if there are any critical time conflicts for student scheduling and if multiple sections are distributed sufficiently. 
+
+<LI><B>Course Linker</B>: Opens the Course Linker subwindow.  There can only be one Course Linker subwindow open at a time.   The Course Linker is a way to create a main course/subsequent course relationship between courses.  This is particularly important in the sciences where you have a lecture class and one or more lab courses assigned to that lecture.  In the linker you can associate (link) as many subsequent (lab) courses to a single main (lecture) course.  In this scenario, the main course will not be able to be scheduled for any times that overlap any of the subsequent classes and none of the subsequent classes will be able to be scheduled for a time that overlaps the main class.  Subsequent classes may be allowed to have overlapping times as long as there are no conflicts with rooms or professor schedules.  You can link classes at any time during the scheduling process, but it is best to do so after the course assignments and before placing the courses in rooms and times.  If you try to link already scheduled classes with a time conflict the program will not let you do so.
+
+<LI><B>Standard Timeslots</B>: Opens the Standard Timeslots subwindow.  There can only be one Standard Timeslots subwindow open at a time.  A course can be scheduled for any time during the week.  The standard timeslots allow the user to more easily schedule courses.  Several of the drop options in the room viewers is to drop into a timeslot (or the start of a timeslot).  So if there is a standard timeslot of MWF 8:00 AM - 8:50 AM the user can drag a course to one of those positions and drop it into the schedule. Most universities and/or departments have standard positions for course placement.  These should be the standard timeslots used.
+
+<LI><B>Note Editor</B>: Opens the Note Editor subwindow.  There can only be one Note Editor subwindow open at a time.  This is a simple text editor for the user to add notes to the schedule.  
+</UL>
+
+
+<B>Reports:</B> 
+
+<P>
+Most reports have two ways to view them, either as a document or as a table.  The document format is really an HTML webpage.  Document format allows the user to print the report to a printer or to export it to a PDF file.  The table format allows the user to copy the report to the system clipboard as a tab delimited string that can be pasted into nearly any spreadsheet. 
+
+<UL class="IndentList">
+<LI><B>Faculty List</B>: Reports a table of faculty, their short designation, and an empty column.  Available in both document and table format. 
+
+<LI><B>Course Assignments by Course</B>: Reports a list of all scheduled course assignments by course. Available in both document and table format. 
+
+<LI><B>Course Assignments by Professor</B>: Reports a list of all scheduled course assignments by professor.  Available in both document and table format. 
+
+<LI><B>Schedule Sorted by Course</B>: Reports the entire schedule sorted by the course name. Available in both document and table format. 
+
+<LI><B>Schedule Sorted by Professor</B>: Reports the entire schedule sorted by the professor's name. Available in both document and table format. 
+
+<LI><B>Schedule Sorted by Room</B>: Reports the entire schedule sorted by the room name.  Available in both document and table format. 
+
+<LI><B>Print Room Schedule Images</B>: This will send the room schedule images to the printer.
+
+<LI><B>Print Professor Schedule Images</B>: This will send the professor schedule images to the printer.
+
+<LI><B>Schedule Changes</B>: This allows the user to load in a previous draft of the schedule and reports the changes that were made between the two versions.  Only available in document format.
+
+<LI><B>Merge Report</B>: The merge report displays additions and conflicts in the merging two schedules. This should be done before the user does a merge of schedules.  Merging schedules would primarily be used if there were multiple people working on different portions of a single schedule or if there were multiple departments that share resources.  Only available in document format.
+</UL>
+
+
+<B>Window:</B> 
+<UL class="IndentList">
+<LI><B>Cascade</B>: Cascades the layout of all the open windows.
+<LI><B>Tile</B>: Tiles the layout of all the open windows.
+</UL>
+
+
+<B>Help:</B> 
+<UL class="IndentList">
+<LI><B>Help - Internal Browser</B>: Opens this help system in a special browser that is part of this program.
+<LI><B>Help - System Browser</B>: Opens this help system in the default browser for your computer.
+<LI><B>About</B>: Version and date information about this program. 
+</UL>
+
+
+</div>
+</BODY>
+</HTML>
+
