@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="Academic Scheduler Help">
+<meta name="author" content="Don Spickler">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<TITLE>Academic Scheduler User's Guide</TITLE>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/personal.css">
+
+</HEAD>
+<BODY>
+
+<!-- ///////////////   Begin Page Contents    //////////////////// -->
+<div class="container" style="margin-top: 2%; margin-bottom: 2%">
+
+<P class=CenterSmallTopSpace></P>
+
+<H5 class=TitleUnd>Faculty/Course Assignment Window</H5>
+
+<P>
+The Faculty/Course Assignment window is the hub of the program.  In the first stage of scheduling courses are dragged from the course list window to this window and then in the second stage the courses are dragged from this window to the room viewers to place the courses into rooms and times. 
+
+<CENTER>
+<IMG SRC="images/FacultyCourseAssignmentWindow.png" WIDTH="500">
+</CENTER>
+
+<UL class="IndentList">
+<LI>The layout of this view is each faculty member is listed, the courses assigned to them are below and indented.  
+
+<LI>The status column shows the course scheduling progress for each course, red means that the course has no rooms and times, yellow means that it is partially scheduled, but it needs some more minutes, dark green means that it is scheduled for the correct amount of time, and finally light green means that it is over scheduled.
+
+<LI>The details column for a professor shows the professor's workload.  The first number is the number of workload hours and the second is the fraction of annual load.  If a professor has tentative courses assigned to them the same is true for the tentative hours and annual load fraction. In the example above, Martha Jones has 5 hours to her load as well as 5 hours that are currently for tentative classes.  The fractions listed are for a 24-hour annual load.
+
+<LI>The details column for a class contains a list of rooms and timeslots the course is scheduled for. 
+
+<LI>Tentative courses are rendered in gray and italics. 
+
+<LI>If yow double-click a course the course information dialog will appear with the particular course loaded. The workings of the course information dialog are discussed in its own section.  
+
+<CENTER>
+<IMG SRC="images/CourseInfo001.png" WIDTH="500" class=frame>
+</CENTER>
+
+<LI>If you right-click on a course a pop-up menu will appear with the following options.
+<UL class="IndentList">
+<LI><B>Course Properties</B>: Invokes the course information dialog for the selected class. 
+<LI><B>Tentative</B>: Check box for designating the course as tentative or real.
+<LI><B>Remove Course from Rooms</B>: This will remove the rooms and times from the scheduling of this class but leave the class in the schedule with the current instructor or instructors.
+<LI><B>Remove Course from Schedule</B>: This will remove the course from the schedule.  
+</UL>
+
+</UL>
+
+<P>
+<B>Options:</B>
+<UL class="IndentList">
+<LI><B>Add New Faculty</B>: This invokes the new faculty input dialog to add in new faculty members to the faculty database.
+<LI><B>Edit Faculty</B>: This will open the faculty input dialog but with only one line and the data of the currently selected faculty member loaded into the cells.  Edit the fields as desired and click the OK button to finish editing. 
+<LI><B>Delete Faculty Member</B>: This will delete the currently selected faculty member.  If any classes in the schedule are being taught by this faculty member they will be removed from the schedule. Unless the course is team taught and then the faculty member is removed from the team and the course remains in the schedule. 
+<LI><B>Course Properties</B>: Invokes the course information dialog for the selected class. 
+<LI><B>Toggle Tentative</B>: Toggles the tentative setting for the currently selected the course.
+<LI><B>Remove Course from Rooms</B>: This will remove the rooms and times from the scheduling of this class but leave the class in the schedule with the current instructor or instructors.
+<LI><B>Remove Course from Schedule</B>: This will remove the course from the schedule.  
+<LI><B>Expanded All</B>: Expands the view to show all classes for each professor.
+<LI><B>Collapse All</B>: Collapses the view to just the professor lines. 
+</UL>
+
+</div>
+</BODY>
+</HTML>
+

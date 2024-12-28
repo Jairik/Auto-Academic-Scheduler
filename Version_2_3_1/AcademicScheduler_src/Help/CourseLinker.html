@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="Academic Scheduler Help">
+<meta name="author" content="Don Spickler">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<TITLE>Academic Scheduler User's Guide</TITLE>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/personal.css">
+
+</HEAD>
+<BODY>
+
+<!-- ///////////////   Begin Page Contents    //////////////////// -->
+<div class="container" style="margin-top: 2%; margin-bottom: 2%">
+
+<P class=CenterSmallTopSpace></P>
+
+<H5 class=TitleUnd>Course Linker</H5>
+
+<P>
+The Course Linker is a way to create a main course/subsequent course relationship between courses.  This is particularly important in the sciences where you have a lecture class and one or more lab courses assigned to that lecture.  In the linker you can associate (link) as many subsequent (lab) courses to a single main (lecture) course.  In this scenario, the main course will not be able to be scheduled for any times that overlap any of the subsequent classes and none of the subsequent classes will be able to be scheduled for a time that overlaps the main class.  Subsequent classes may be allowed to have overlapping times as long as there are no conflicts with rooms or professor schedules.  You can link classes at any time during the scheduling process, but it is best to do so after the course assignments and before placing the courses in rooms and times.  If you try to link already scheduled classes with a time conflict the program will not let you do so.
+
+<CENTER>
+<IMG SRC="images/CourseLinker.png" WIDTH="500">
+</CENTER>
+
+<P>
+<B>Options:</B>
+<UL class="IndentList">
+<LI><B>Link Courses</B>:  This will link the selected course in the left list (main) with all the selected courses in the right list (subsequent).  When the linking is done the courses that were linked will appear in the list at the bottom and will be removed from the top two lists.
+<LI><B>Unlink Courses</B>: This will unlink the currently selected linked courses in the bottom list.  These courses will be removed from the linked list and returned to the top two lists. 
+</UL>
+
+</div>
+</BODY>
+</HTML>
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="Schedule Card Creator Help">
+<meta name="author" content="Don Spickler">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<TITLE>Schedule Card Creator Users Guide</TITLE>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/personal.css">
+
+</HEAD>
+<BODY>
+
+<!-- ///////////////   Begin Page Contents    //////////////////// -->
+<div class="container" style="margin-top: 2%; margin-bottom: 2%">
+
+<P class=CenterSmallTopSpace></P>
+
+<H5 class=TitleUnd>Layout Options</H5>
+
+<P>
+The window at the left displays the layout options for the program.  At the top are some general layout options and below those are the options for each of the ten styles for the schedule items.  To change any of the options simply double-click on the option.  In some cases, like fonts and colors, a dialog box will appear allowing you to input your preferences.  In other cases the program will either toggle the selection on and off or cycle through the options.  
+</P>
+
+<UL class=IndentList> 
+<LI> <B>General</B>
+<UL class=IndentList> 
+<LI> Time Range:  This sets the starting and ending times of the schedule card.  These are not altered by the times of the schedule items and schedule items that are outside this range may be clipped or not show at all. 
+<LI> Background Color: This is the color of the background in the schedule item area.  This color is not used in the days and times area or the header area.  
+<LI> Outline Color: This is the color used for the outline of the card as well as the outline for each schedule item and the divisions between the days and times.
+<LI>Font Auto-Resize: This is the mode used for automatically resizing the fonts.  There are three modes: Global, Fixed, and Off.  In Global mode the program will automatically select the font size of all the fonts on the schedule to best fit their available space without overlapping into the other schedule items.  This is the default mode of the program and really what it was designed to do.  The automatic font resizer will start at the minimum font size from the options and increase the font size until the largest font possible still fits in all available spaces. When in Fixed mode the font size that is used is the minimum font size from the options.  When the resizing is turned off the program will use the font sizes from each of the font options selected by the user.  Note that when printing the Global mode is used no matter what this option is set to.  Due to the differences in font metrics of graphical fonts between screen and printer devices the Global setting will produce the most consistent results when printing.  
+
+<P>
+Note that even if an item is off the schedule image, it was given times that were outside the time range, it will still be used in the calculations of the font size when in global resizing mode. 
+
+<LI> Minimum Font Size: This is the smallest the font size will go in Global mode ad is exactly the font size used in Fixed mode.  If the text is too large for its available space at this size it will enter other schedule items and either overwrite or be clipped.  It is good to keep this value set low but not too low.
+
+<LI>Resize Adjustment: This is the point size decrease imposed on the global font size selection.  Since the program, in Global mode, will set the font size to the largest possible font it may appear too large for some users.  Setting this option will decrease the font size by the given number of points, with a minimum set to the given minimum.  This option can stay at 0 (no adjustment, use optimal size) but if you wish to fine-tune the font size you can use this.
+
+</UL>
+
+<LI> <B>Days &amp; Times</B>
+
+<UL class=IndentList> 
+<LI> Background Color: This is the color of the background in the days and times area. 
+<LI> Text Color: This is the color used for the text of the days and times. 
+<LI> Font: This is the font used for the days and times.  Depending on the resize mode being used the font size may be altered.
+</UL>
+
+
+<LI> <B>Hour Divisions</B> The hour divisions are horizontal lines at each hour that go across the schedule item area.  This may make it easier for the reader to see when each item starts and ends.
+
+<UL class=IndentList> 
+<LI> Include: Turn the divisions on and off. 
+<LI> Color: The color used for the divisions. 
+</UL>
+
+<LI> <B>Printing</B>
+<UL class=IndentList> 
+<LI> Dimensions: This is the width and height in inches of the printed schedule card.
+<LI> Offset: This is the horizontal and vertical offset in inches of the upper left corner of the printed schedule card. Since most printers have a printing area less than the area of the page you will want this between 0.5 and 1 inch so that the printer does not clip the image.
+<LI> Scaling: There are three scaling modes that can be used: None, Height to Width, and Width to Height.  In None mode the printed image has the given dimensions.  Since these dimensions may not match the aspect ratio of the image being viewed on the screen the printed image may look a little different.  In Height to Width mode the program will set the height of the printed image to match the width and the current aspect ratio of the viewed image.  In Width to Height mode the program will set the width of the printed image to match the height and the current aspect ratio of the viewed image.  Note that these scaling options could easily set either the width or height to a value that is outside the printer's printing area and hence clip the image.  It is advisable to use printing preview or print the image to a PDF file before sending to a physical printer.  
+</UL>
+
+<LI> <B>Heading</B>
+
+<UL class=IndentList> 
+<LI> Include: Turn the header on and off. 
+<LI> Background Color: This is the color of the background in the header area. 
+<LI> Text Color: This is the color used for the text of the header. 
+<LI> Font: This is the font used for the header.  Depending on the resize mode being used the font size may be altered.
+<LI> Left Text: This is the text placed in the left third of the header.
+<LI> Center Text: This is the text placed in the center third of the header.
+<LI> Right Text: This is the text placed in the right third of the header.
+</UL>
+
+
+<LI> <B>Styles</B>
+
+<UL class=IndentList> 
+<LI> Background Color: This is the color of the background in the schedule item. 
+<LI> Text Color: This is the color used for the text of the schedule item. 
+<LI> Font: This is the font used for the schedule item.  Depending on the resize mode being used the font size may be altered.
+<LI> Justification: This is the horizontal text justification for the text inside the schedule item box.  The options here are left, center, and right. 
+<LI> Alignment: This is the text vertical alignment for the text inside the schedule item box.  The options here are top, middle, and bottom. 
+<LI> Spacing: This turns on and off the spacing between the lines of text.  If this is turned on the lines will be equally spaced vertically inside the area, and if turned off the lines will be spaced at the font height of the text.
+</UL>
+
+</UL>
+
+
+
+</div>
+</BODY>
+</HTML>
+

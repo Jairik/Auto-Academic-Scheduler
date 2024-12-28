@@ -1,0 +1,7 @@
+12/27/24 - 1:10pm-1:35pm/1:45pm-2:20pm - 1 Hour - Reviewing overall program structure, reading documentation, and creating some Auto-scheduling skeleton structures/basic idealogy.
+
+
+----------------------------------------------------------------------------------------------------------------
+GOALS: Add Autoscheduling (w/ documentation) & Autosave Feature. If these features are able to be implemented in 
+<39 hours, will work on GUI improvements, additional external documentation and/or improvements on
+Autoscheduling algorithm (algorithm will be in-house). 

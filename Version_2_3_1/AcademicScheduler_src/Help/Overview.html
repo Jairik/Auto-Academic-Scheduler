@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="Academic Scheduler Help">
+<meta name="author" content="Don Spickler">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<TITLE>Academic Scheduler User's Guide</TITLE>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/personal.css">
+
+</HEAD>
+<BODY>
+
+<!-- ///////////////   Begin Page Contents    //////////////////// -->
+<div class="container" style="margin-top: 2%; margin-bottom: 2%">
+
+<P class=CenterSmallTopSpace></P>
+
+<H5 class=TitleUnd>Program Overview</H5>
+
+<P>
+The Academic Scheduler is an application that allows the user to create, save, and export a semester schedule for an academic department.   It uses multiple subwindow viewers of information of the schedule and a drag-and-drop interface to make course scheduling quicker and easier.  There is certainly no possible way that this or any other program will be able to encompass all the intricacies in scheduling for every department at every university, but it is hoped that it will be sufficient and ease a significantly difficult task for the departmental leadership.
+
+<CENTER>
+<IMG SRC="images/AcademicSchedulerOverview.png" WIDTH=800 class=frame>
+</CENTER>
+
+<P>
+The subwindow views offered are as follows, 
+
+<UL class=IndentList>
+<LI><B>Courses</B>: List of courses offered by the department. The user will drag these to the Course/Faculty Assignments window to assign courses to faculty.
+
+<LI><B>Course/Faculty Assignments</B>: This is a list of faculty course assignments.  This window is the central point of the program.  The user will drag courses from the Courses window to this one to assign classes to the faculty member and then drag classes from here to a room viewer window to place the classes into a room and time.  
+
+<LI><B>Room Viewer</B>: This is a viewer for all the courses that are assigned to a specific room.  In addition, the room viewers allow courses to be dragged and dropped from the Course/Faculty Assignments window, or another room viewer, to them for room and time placement.  You can have as many room viewers open as you would like. 
+
+<LI><B>Professor Schedule Viewer</B>: This is a viewer for all the courses that are assigned to a specific instructor.  This window shows the course layout for a single professor's schedule.  This view does not allow drag and drop of courses like the room viewer, but you can edit course properties from here.  You can have as many professor schedule viewers open as you would like.
+
+<LI><B>Course Position Viewer</B>: This is a viewer that shows the positioning of courses over the week and highlights overlaps. This helps determine if there are any critical time conflicts for student scheduling and if multiple sections are distributed sufficiently. 
+
+<LI><B>Course Linker</B>: The Course Linker is a way to create a main course/subsequent course relationship between courses.  This is particularly important in the sciences where you have a lecture class and one or more lab courses assigned to that lecture.  In the linker you can associate (link) as many subsequent (lab) courses to a single main (lecture) course.  In this scenario, the main course will not be able to be scheduled for any times that overlap any of the subsequent classes and none of the subsequent classes will be able to be scheduled for a time that overlaps the main class.  Subsequent classes may be allowed to have overlapping times as long as there are no conflicts with rooms or professor schedules.  You can link classes at any time during the scheduling process, but it is best to do so after the course assignments and before placing the courses in rooms and times.  If you try to link already scheduled classes with a time conflict the program will not let you do so.
+
+<LI><B>Standard Timeslots</B>: A course can be scheduled for any time during the week.  The standard timeslots allow the user to more easily schedule courses.  Several of the drop options in the room viewers is to drop into a timeslot (or the start of a timeslot).  So if there is a standard timeslot of MWF 8:00 AM - 8:50 AM the user can drag a course to one of those positions and drop it into the schedule. Most universities and/or departments have standard positions for course placement.  These should be the standard timeslots used.
+
+<LI><B>Note Editor</B>: This is a simple text editor for the user to add notes to the schedule.  
+
+</UL>
+
+<P>
+The program also offers several reporting options.  Most reports have two ways to view them, either as a document or as a table.  The document format is really an HTML webpage.  Document format allows the user to print the report to a printer or to export it to a PDF file.  The table format allows the user to copy the report to the system clipboard as a tab delimited string that can be pasted into nearly any spreadsheet.  The reports offered are as follows, 
+
+<UL class=IndentList>
+<LI><B>Faculty List</B>: Reports a table of faculty, their short designation, and an empty column (if you use the document format).  
+
+<LI><B>Course Assignments by Course</B>: Reports a list of all scheduled course assignments by course. 
+
+<LI><B>Course Assignments by Professor</B>: Reports a list of all scheduled course assignments by professor. 
+
+<LI><B>Schedule Sorted by Course</B>: Reports the entire schedule sorted by the course name.
+
+<LI><B>Schedule Sorted by Professor</B>: Reports the entire schedule sorted by the professor's name.
+
+<LI><B>Schedule Sorted by Room</B>: Reports the entire schedule sorted by the room name.
+
+<LI><B>Print Room Schedule Images</B>: This will send the room schedule images to the printer.
+
+<LI><B>Print Professor Schedule Images</B>: This will send the professor schedule images to the printer.
+
+<LI><B>Schedule Changes</B>: This allows the user to load in a previous draft of the schedule and reports the changes that were made between the two versions.
+
+<LI><B>Merge Report</B>: The merge report displays additions and conflicts in the merging two schedules. This should be done before the user does a merge of schedules.  Merging schedules would primarily be used if there were multiple people working on different portions of a single schedule or if there were multiple departments that share resources.  
+</UL>
+
+<P>
+The program also offers standard file saving and loading of schedules.  The files that are saved contain all database information for the schedule.  So when creating a new schedule, if one had been created previously, the user would open an old file and make the needed changes. These procedures and options will be discussed in other sections of this help system.
+
+</div>
+</BODY>
+</HTML>
+
