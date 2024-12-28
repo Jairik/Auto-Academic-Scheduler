@@ -4016,11 +4016,31 @@ class AcademicScheduler(QMainWindow):
         else:
             self.courselinker.setFocus()
 
+    # Test button to print the current database
     def testing(self):
         """
         Test function linked to the test menu option that can be used in development.
-        Currently, this menu item is not visible in th menu.
+        Currently, this menu item is not visible in the menu.
         """
+        # Print Database to terminal for testing purposes
+        ''' How Database is read from file, essentially
+        self.options = filecontents[0]
+        self.faculty = filecontents[1]
+        self.rooms = filecontents[2]
+        self.courses = filecontents[3]
+        self.standardtimeslots = filecontents[4]
+        self.schedule = filecontents[5]
+        self.noteeditor.editor.setPlainText(filecontents[6])
+        '''
+        print(f"Options: {self.options}\n\n")
+        print(f"Faculty: {self.faculty}\n\n")
+        print(f"Rooms: {self.rooms}\n\n")
+        print(f"Courses: {self.courses}\n\n")
+        print(f"StandardTimeSlots: {self.standardtimeslots}\n\n")
+        print(f"Schedule: {self.schedule}\n\n")
+        # print(f"NoteEditor: {self.noteeditor}") Irrelevant
+        
+        
         pass
 
     #########################################################################
@@ -4107,6 +4127,7 @@ class AcademicScheduler(QMainWindow):
             self.standardtimeslots = filecontents[4]
             self.schedule = filecontents[5]
             self.noteeditor.editor.setPlainText(filecontents[6])
+            self.testing()
             return True
         except:
             return False
