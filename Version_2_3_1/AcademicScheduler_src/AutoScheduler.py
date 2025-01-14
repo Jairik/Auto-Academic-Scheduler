@@ -63,10 +63,11 @@ class AutoScheduler():  # No extra windows necessary, simply updates database
             for prof in self.faculty:
                 self.faculty_count[prof] = 0
                 
-        # Creating a list of rooms available at specific times. Will later optimize
+        # Creating a list of rooms available at each timeslot. Will later optimize
         combined = [
             {**self.rooms, "timeslot": timeslot}
-            for room, timeslot in zip(self.courses, itertools.cycle(self.timeslots))
+            for room in self.rooms
+            for timeslot in self.timeslots
         ]
         
         # Loop through each course, assigning a room, professor, and timeslot

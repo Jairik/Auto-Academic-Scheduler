@@ -1,7 +1,7 @@
-12/27/24 - 1:10pm-1:35pm/1:45pm-2:20pm - 1 Hour - Reviewing overall program structure, reading documentation, and creating some Auto-scheduling skeleton structures/basic idealogy.
+12/27/24 - 1:10pm-1:35pm/1:45pm-2:20pm - 60 minutes - Reviewing overall program structure, reading documentation, and creating some Auto-scheduling skeleton structures/basic idealogy.
 12/28/24 - 4:35pm-5:05pm - 30 minutes - Printing loaded data to review structure
-1/13/24 - 10:00pm-
+1/13/24 - 10:00pm-10:45pm - 45 minutes - Adding tentative functions, taking notes on database
 
-Total: 1.50 hours
+Total: 135 minutes (/2400 minimum)
 ----------------------------------------------------------------------------------------------------------------
 GOALS: Add optimized Autoscheduling (w/ documentation) & Autosave Feature.
