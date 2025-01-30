@@ -76,9 +76,16 @@ class AutoScheduler():  # No extra windows necessary, simply updates database
             # Find the next compatible room
             if not self.roomIsCompatible(course, combined[i]):
                 i += 1
+            # Add room config to schedule
+            ...
+            # Remove room and timeslot combo from available slots
+            ...
             
     # Helper function that determines if a course and room+time is compatible
     def roomIsCompatible(course, roomtime):
-        
+        '''
+        Helper function for CSPs, determines if a 'roomtime' is compatible
+        with a given course
+        '''
         pass
         
